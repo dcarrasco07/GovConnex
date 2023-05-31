@@ -1,22 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import { Button } from './components/Button/Button';
+import { InputField } from './components/InputField/InputField';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Welcome! This is to check whether importing the button and input field components will work. To explore them further, try running <code>npm run storybook</code>
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Button text="Try me!"></Button>
+        <br></br>
+        <InputField type="email"></InputField>
       </header>
     </div>
   );
