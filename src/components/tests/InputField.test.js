@@ -1,5 +1,5 @@
 import { render, screen, fireEvent } from '@testing-library/react';
-import { InputField } from './InputField';
+import { InputField } from '../InputField/InputField';
 
 test('renders input field', () => {
     render(<InputField />);

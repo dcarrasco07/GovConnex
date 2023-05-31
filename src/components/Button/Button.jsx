@@ -30,6 +30,7 @@ export const Button = ({ state, variation, text }) => {
 
   return (
     <button
+      data-testid="button"
       type="button"
       className={`${variation} ${_state}`}
       onMouseEnter={handleMouseEnter}
