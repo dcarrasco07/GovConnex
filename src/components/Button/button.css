@@ -1,0 +1,41 @@
+button {
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 10px 20px;
+  border:none;
+}
+
+.primary {
+  background: #0b97cf;
+}
+
+.secondary {
+  background: #5f35ea;
+}
+
+.success {
+  background: #09b958;
+}
+
+.warning {
+  background: #e4c31c;
+}
+
+.danger {
+  background: #c53f3f;
+}
+
+.hover {
+  background: #e41cc6;
+  cursor: pointer;
+}
+
+.active {
+  background: #1ce4c3;
+  border: 1px solid #0b97cf;
+}
+
+.disabled {
+  background: #626a69;
+  color: #bab9b9;
+}
