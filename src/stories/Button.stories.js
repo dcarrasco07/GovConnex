@@ -73,6 +73,6 @@ export const Active = {
 export const Disabled = {
   args: {
     text: 'Disabled',
-    state: 'disabld',
+    state: 'disabled',
   },
 };

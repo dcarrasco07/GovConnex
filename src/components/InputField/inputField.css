@@ -1,0 +1,38 @@
+input {
+    border-radius: 5px;
+    padding: 10px 20px;
+    min-width: 200px;
+    border: 1px solid #c1c1c1;
+}
+
+.input-message {
+    font-family: sans-serif;
+    margin-top: 4px;
+    font-size: 14px;
+}
+
+input:focus {
+    border: 1px solid #0b97cf;
+}
+
+input.valid {
+    border: 1px solid #09b958;
+}
+
+.input-message.valid {
+    color: #09b958;
+}
+
+input.error {
+    border: 1px solid #c53f3f;
+}
+
+.input-message.error {
+    color: #c53f3f;
+}
+
+@media only screen and (max-width: 600px) {
+    input {
+        width: calc(100% - 40px);
+    }
+}

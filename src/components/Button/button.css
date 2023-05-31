@@ -2,40 +2,46 @@ button {
   color: #ffffff;
   border-radius: 5px;
   padding: 10px 20px;
-  border:none;
+  border: none;
 }
 
-.primary {
+button.primary {
   background: #0b97cf;
 }
 
-.secondary {
+button.secondary {
   background: #5f35ea;
 }
 
-.success {
+button.success {
   background: #09b958;
 }
 
-.warning {
+button.warning {
   background: #e4c31c;
 }
 
-.danger {
+button.danger {
   background: #c53f3f;
 }
 
-.hover {
+button.hover {
   background: #e41cc6;
   cursor: pointer;
 }
 
-.active {
+button.active {
   background: #1ce4c3;
   border: 1px solid #0b97cf;
 }
 
-.disabled {
+button.disabled {
   background: #626a69;
   color: #bab9b9;
+}
+
+@media only screen and (max-width: 600px) {
+  button {
+    width: 100%;
+  }
 }
