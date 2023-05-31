@@ -16,7 +16,7 @@ export const InputField = ({ state, type }) => {
     function validateEmail(e) {
         const { value } = e.target;
 
-        if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(value)) {
+        if (/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(value)) {
             setState("valid");
             setMessage("Valid email address.");
         } else {
@@ -28,6 +28,7 @@ export const InputField = ({ state, type }) => {
     return (
         <div>
             <input
+                data-testid="inputField"
                 type={type}
                 placeholder={type === "email" ? "ex: john_doe@gmail.com" : "Enter here"}
                 className={_state}
