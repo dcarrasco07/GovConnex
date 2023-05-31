@@ -4,7 +4,7 @@ import './inputField.css';
 /**
  * Primary UI component for user interaction
  */
-export const InputField = ({ state, type }) => {
+const InputField = ({ state, type }) => {
     const [_state, setState] = React.useState(state);
     const [_validationMessage, setMessage] = React.useState("");
 
@@ -44,3 +44,5 @@ InputField.defaultProps = {
     state: 'default',
     type: 'text',
 };
+
+export default InputField;

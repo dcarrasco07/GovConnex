@@ -4,7 +4,7 @@ import './button.css';
 /**
  * Primary UI component for user interaction
  */
-export const Button = ({ state, variation, text }) => {
+const Button = ({ state, variation, text }) => {
   const [_state, setState] = React.useState(state);
 
   React.useEffect(() => {
@@ -48,3 +48,5 @@ Button.defaultProps = {
   variation: 'primary',
   text: 'Button',
 };
+
+export default Button;

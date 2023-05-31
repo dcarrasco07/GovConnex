@@ -1,4 +1,4 @@
-import { InputField } from '../components/InputField/InputField';
+import InputField from '../components/InputField/InputField';
 
 export default {
   title: 'Example/InputField',
@@ -7,7 +7,7 @@ export default {
   argTypes: {
     state: {
       description: 'State of the Input Field',
-      options: ['default', 'focus', 'valid', 'error', 'disabled'],
+      options: ['default', 'valid', 'error', 'disabled'],
       control: { type: 'select' },
     },
     type: {
